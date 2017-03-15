@@ -1,10 +1,9 @@
-Leer num 
-contador = 0 
-i = 1 
-
-mientras ( i <= num) hacer 
-si (RESTO(num / i) == 0) entonces 
-contador = contador + 1 
-fin si 
-i = i + 1 
-fin mientras 
+#include 
+int main(void)
+{
+for (int j=2;j<=100;j++){//por definicion el 1 no es primo, se empieza en 2
+ int a=0;
+ for(int i=1;i<=100;i++)//divide a j entre los números del 1 al 100
+ {
+     if(j%i==0) // si num1 módulo de i es 0, incrementamos a en 1.
+     a++;
